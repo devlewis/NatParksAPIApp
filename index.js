@@ -35,7 +35,14 @@ function getResults(states, maxResults) {
 
   console.log(url);
 
-  fetch(url)
+//   const options = {
+//     headers: new Headers({
+//       "X-Api-Key": apiKey})
+//   };
+
+  fetch(url
+    //, options
+    )
     .then(response => {
       if (response.ok) {
         return response.json();
